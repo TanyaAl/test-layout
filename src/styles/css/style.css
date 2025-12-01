@@ -1,5 +1,48 @@
 body {
-  color: blue;
+  padding: 0;
+  margin: 0;
+  background-color: #020415;
+  font-family: Roboto, sans-serif;
+  color: #fff;
+}
+
+@font-face {
+  font-family: HeliosC;
+  src: url("../../assets/fonts/helios.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+header {
+  text-align: center;
+}
+
+.title {
+  font-size: 58px;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 38px;
+}
+
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 10px;
+}
+.cards .card:nth-child(odd) {
+  grid-column: 1;
+}
+.cards .card:nth-child(even) {
+  grid-column: 2;
+}
+
+.card {
+  background-color: rgba(158, 152, 252, 0.2);
+  height: 308px;
+  border: 1px solid #d9d9d9;
+  border-radius: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
