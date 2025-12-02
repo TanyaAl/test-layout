@@ -2,13 +2,21 @@
 
 header {
   text-align: center;
-}
 
-.title {
-  font-size: 58px;
-  font-weight: 400;
-}
+  .title {
+    font-size: 58px;
+    font-weight: 400;
+  }
 
-.subtitle {
-  font-size: 38px;
+  .mobile-br {
+    display: none;
+  }
+
+  .desktop-br {
+    display: block;
+  }
+
+  .subtitle {
+    font-size: 38px;
+  }
 }

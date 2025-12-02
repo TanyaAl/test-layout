@@ -1,8 +1,46 @@
 @import 'variables';
 
 .card {
-  background-color: $card-color;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  position: relative;
   height: 308px;
-  border: 1px solid $border-color;
+  max-width: 597px;
   border-radius: 16px;
+  background-color: $card-color;
+  padding: 26px;
+
+  $border: 1px;
+  $border-background: linear-gradient(90deg, $border-start, $border-end);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: $border;
+    border-radius: inherit;
+    background-image: $border-background;
+    mask:
+      linear-gradient(#000 0 0) content-box exclude,
+      linear-gradient(#000 0 0);
+  }
+
+  .arrow-btn {
+    flex-shrink: 0;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb($btn-color, 0.2);
+    background-image: url('../../assets/icons/reshot-icon-arrow-diagonal-up-right-Y2ND6FM3RW\ 1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+  }
+
+  .card-text {
+    font-size: 24px;
+    margin-top: auto;
+  }
 }
