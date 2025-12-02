@@ -3,7 +3,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: #020415;
-  font-family: Roboto, sans-serif;
+  font-family: HeliosC, sans-serif;
   color: #fff;
 }
 
@@ -90,7 +90,7 @@ header .subtitle {
   visibility: hidden;
 }
 
-@media (width <= 768px) {
+@media (width <= 780px) {
   header .title {
     font-size: 28px;
   }
